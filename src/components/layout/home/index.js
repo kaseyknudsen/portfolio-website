@@ -2,7 +2,7 @@ import './index.scss'
 import LogoTitle from '../../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../animatedLetters'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -21,8 +21,18 @@ const Home = () => {
     'p',
     'e',
     'r',
-    '.'
+    '.',
   ]
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000);
+    
+    return () => {
+      clearTimeout(timerId);
+    };
+  }, []);
 
   return (
     <div className="container home-page">
@@ -30,10 +40,10 @@ const Home = () => {
         <h1>
           <span className={letterClass}>H</span>
           <span className={`${letterClass} _12`}>i,</span>
-           <br /> 
-           <span className={`${letterClass} _13`}>I</span>
-           <span className={`${letterClass} _14`}>'m</span>
-          
+          <br />
+          <span className={`${letterClass} _13`}>I</span>
+          <span className={`${letterClass} _14`}>'m</span>
+
           <AnimatedLetters
             letterClass={letterClass}
             strArray={nameArray}
