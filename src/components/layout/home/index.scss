@@ -74,12 +74,14 @@
     }
   }
 
-  .kaseyImg {
-    // width: auto;
-    // height: 100%;
-    opacity: 0.3;
-   
-  }
+
 }
 
-
+.kaseyImg {
+    opacity: 0.2;
+    position: absolute;
+    left: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

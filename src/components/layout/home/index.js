@@ -29,43 +29,45 @@ const Home = () => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
-    }, 4000);
-    
+    }, 4000)
+
     return () => {
-      clearTimeout(timerId);
-    };
-  }, []);
+      clearTimeout(timerId)
+    }
+  }, [])
 
   return (
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
-          <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>
+    <>
+      <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
 
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={nameArray}
-            idx={15}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            strArray={jobArray}
-            idx={22}
-          />
-        </h1>
-        <h2>Frontend Developer / Javascript / React</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={nameArray}
+              idx={15}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              strArray={jobArray}
+              idx={22}
+            />
+          </h1>
+          <h2>Frontend Developer / Javascript / React</h2>
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
+        </div>
+        {/* <Logo /> */}
       </div>
-      {/* <Logo /> */}
-      <img src={KaseyImg} className='kaseyImg'  alt='Kasey Knudsen'/>
-    </div>
+    </>
   )
 }
 
