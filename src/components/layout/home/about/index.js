@@ -1,12 +1,35 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AnimatedLetters from '../../../animatedLetters'
 import './index.scss'
+import { useState, useEffect } from 'react'
+import {
+  faBootstrap,
+  faCss3,
+  faGit,
+  faHtml5,
+  faJs,
+  faNodeJs,
+  faReact,
+} from '@fortawesome/free-brands-svg-icons'
 
 const About = () => {
+  const [letterClass, setLetterClass] = useState('text-animate')
+
+  useEffect(() => {
+    const timerId = setTimeout(() => {
+      setLetterClass('text-animate-hover')
+    }, 4000)
+
+    return () => {
+      clearTimeout(timerId)
+    }
+  }, [])
   return (
     <div className="container about-page">
       <div className="text-zone">
         <h1>
           <AnimatedLetters
+            letterClass={letterClass}
             strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
             idx={15}
           />
@@ -16,7 +39,7 @@ const About = () => {
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
           volutpat ac tincidunt vitae. Malesuada pellentesque elit eget gravida
           cum sociis natoque penatibus et. Purus in massa tempor nec feugiat
-          nisl pretium. 
+          nisl pretium.
         </p>
         <p>
           Egestas congue quisque egestas diam in arcu cursus. Egestas sed tempus
@@ -27,15 +50,40 @@ const About = () => {
           mauris nunc congue nisi. Pharetra convallis posuere morbi leo urna
           molestie at elementum eu. Faucibus vitae aliquet nec ullamcorper sit
           amet risus. Massa vitae tortor condimentum lacinia quis vel eros donec
-          ac. 
+          ac.
         </p>
         <p>
           Urna condimentum mattis pellentesque id nibh tortor id aliquet. Amet
           nisl suscipit adipiscing bibendum est ultricies integer quis.
           Ridiculus mus mauris vitae ultricies. Accumsan sit amet nulla facilisi
           morbi tempus iaculis urna. Donec massa sapien faucibus et molestie ac
-          feugiat. 
+          feugiat.
         </p>
+      </div>
+      <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faHtml5} color="#DD0031" />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faCss3} color="#DD0031" />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faReact} color="#DD0031" />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faBootstrap} color="#DD0031" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faJs} color="#DD0031" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGit} color="#DD0031" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
+          </div>
+        </div>
       </div>
     </div>
   )

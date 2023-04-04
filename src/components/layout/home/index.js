@@ -1,9 +1,7 @@
 import './index.scss'
-import LogoTitle from '../../../assets/images/logo-s.png'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../animatedLetters'
 import { useEffect, useState } from 'react'
-import Logo from './logo'
 import KaseyImg from '../../../assets/images/KaseyK.png'
 
 const Home = () => {
