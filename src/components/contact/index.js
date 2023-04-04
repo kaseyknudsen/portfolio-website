@@ -25,13 +25,55 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-          volutpat ac tincidunt vitae. Malesuada pellentesque elit eget gravida
-          cum sociis natoque penatibus et. Purus in massa tempor nec feugiat
-          nisl pretium.</p>
-          <div>
-            
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
+            volutpat ac tincidunt vitae. Malesuada pellentesque elit eget
+            gravida cum sociis natoque penatibus et. Purus in massa tempor nec
+            feugiat nisl pretium.
+          </p>
+          <div className="contact-form">
+            <form>
+              <ul>
+                <li className="half">
+                  <input type="text" name="name" placeholder="name" required />
+                </li>
+                <li className="half">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="email"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    name="subject"
+                    required
+                  />
+                </li>
+                <li>
+                  <input
+                    placeholder="Subject"
+                    type="text"
+                    name="subject"
+                    required
+                  />
+                </li>
+                <li>
+                  <textarea
+                    placeholder="Message"
+                    name="message"
+                    required
+                  ></textarea>
+                </li>
+                <li>
+                  <input type="submit" className="flat-button" value="send" />
+                </li>
+              </ul>
+            </form>
           </div>
         </div>
       </div>
