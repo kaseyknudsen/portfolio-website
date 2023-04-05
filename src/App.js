@@ -4,7 +4,6 @@ import Layout from './components/layout'
 import Home from './components/layout/home'
 import About from './components/layout/home/about'
 import Contact from './components/contact'
-import 'leaflet/dist/leaflet.css';
 
 
 function App() {
