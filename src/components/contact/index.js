@@ -76,6 +76,16 @@ const Contact = () => {
             </form>
           </div>
         </div>
+        <div className='info-map'>
+          Kasey Knudsen
+          <br />
+          Napa, California
+          <br />
+          <span>kaseyknudsen@gmail.com</span>
+        </div>
+        <div className='map-wrap'>
+
+        </div>
       </div>
       <Loader type="pacman" />
     </>
