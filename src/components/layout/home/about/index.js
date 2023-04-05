@@ -7,7 +7,6 @@ import {
   faCss3,
   faGit,
   faHtml5,
-  faJs,
   faJsSquare,
   faNodeJs,
   faReact,

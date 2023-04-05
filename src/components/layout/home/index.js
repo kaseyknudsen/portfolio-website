@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import AnimatedLetters from '../../animatedLetters'
 import { useEffect, useState } from 'react'
 import KaseyImg from '../../../assets/images/KaseyK.png'
-import Loader from 'react-loaders'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')

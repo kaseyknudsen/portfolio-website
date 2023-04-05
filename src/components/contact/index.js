@@ -2,7 +2,7 @@ import AnimatedLetters from '../animatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 
 
