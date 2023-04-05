@@ -2,6 +2,9 @@ import AnimatedLetters from '../animatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
+import { MapContainer } from 'https://cdn.esm.sh/react-leaflet/MapContainer'
+import { TileLayer, Marker, Popup } from 'https://cdn.esm.sh/react-leaflet/TileLayer'
+import { useMap } from 'https://cdn.esm.sh/react-leaflet/hooks'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -84,7 +87,14 @@ const Contact = () => {
           <span>kaseyknudsen@gmail.com</span>
         </div>
         <div className='map-wrap'>
-
+          <MapContainer center={[44.96366, 19.61045]} zoom={13}>
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+            <Marker position={[44.96366, 19.61045]}>
+                <Popup>
+                  I live here. One of the mos beautiful places in the world!
+                </Popup>
+            </Marker>
+          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />
