@@ -2,9 +2,9 @@ import AnimatedLetters from '../animatedLetters'
 import './index.scss'
 import Loader from 'react-loaders'
 import { useEffect, useState } from 'react'
-import { MapContainer } from 'https://cdn.esm.sh/react-leaflet/MapContainer'
-import { TileLayer, Marker, Popup } from 'https://cdn.esm.sh/react-leaflet/TileLayer'
-import { useMap } from 'https://cdn.esm.sh/react-leaflet/hooks'
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+
+
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
