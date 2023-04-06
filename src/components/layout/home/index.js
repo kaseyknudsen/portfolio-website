@@ -37,7 +37,14 @@ const Home = () => {
   return (
     <>
       <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
-      <div className="container home-page">
+      <div
+        className="container home-page"
+        // style={{
+        //   backgroundImage: `url(${KaseyImg})`,
+        //   backgroundSize: 'cover',
+        //   opacity:'0.2'
+        // }}
+      >
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>

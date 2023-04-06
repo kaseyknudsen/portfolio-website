@@ -1,5 +1,6 @@
 .flat-button {
   color: #ffd700;
+  position: absolute;
   font-size: 11px;
   letter-spacing: 3px;
   text-decoration: none;
@@ -13,7 +14,7 @@
   text-align: center;
   margin-right: 10px;
   opacity: 0;
-  animation: fadeInUp 2s 2s;
+  animation: backInRight 2s 2s;
   animation-fill-mode: forwards;
 
   &:hover {
