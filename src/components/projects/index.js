@@ -43,7 +43,7 @@ const Projects = () => {
               JAZZ IMPROV WEBSITE
             </Link>
           </div>
-          <div style={{marginTop: '100px'}}>
+          <div style={{ marginTop: '100px' }}>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
@@ -62,6 +62,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      <Loader type="pacman" />
     </>
   )
 }
