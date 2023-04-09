@@ -28,15 +28,13 @@ p {
   position: relative;
 }
 
-.theory-image {
-  max-width: 20%;
-  margin-top: 20em;
-  float: right;
-  border: 2px solid #ffd700;
-  border-radius: 5%;
-  position: absolute;
-  right: 30rem;
+.theory-images-container > img {
+  max-width: 50%;
+  margin-right: 20px;
   opacity: 0;
-  animation: fadeIn 1s 1.5s;
+  margin-bottom: 20px;
+  animation: backInDown 2s 2s;
   animation-fill-mode: forwards;
+  border: 2px solid #ffd700;
+  box-shadow: 0 0 10px 0px lightyellow;
 }
