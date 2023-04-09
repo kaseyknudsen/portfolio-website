@@ -54,11 +54,8 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-            volutpat ac tincidunt vitae. Malesuada pellentesque elit eget
-            gravida cum sociis natoque penatibus et. Purus in massa tempor nec
-            feugiat nisl pretium.
+            I'm an ambitious junior developer looking for projects to work on! Please contact
+            me for more information.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
