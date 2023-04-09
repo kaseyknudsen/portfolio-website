@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import { useState, useEffect } from 'react'
 import AnimatedLetters from '../animatedLetters'
 import { Link } from 'react-router-dom'
+import JazzImprovImage1 from '../../assets/images/jazz-improv-website-image-1.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -18,6 +19,7 @@ const Projects = () => {
   return (
     <>
       <div className="container projects-page">
+      <img src={JazzImprovImage1} alt='Theory 1' className='theory-image'/>
         <div className="text-zone">
           <h1>
             <AnimatedLetters
@@ -28,12 +30,13 @@ const Projects = () => {
           </h1>
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-              volutpat ac tincidunt vitae. Malesuada pellentesque elit eget
-              gravida cum sociis natoque penatibus et. Purus in massa tempor nec
-              feugiat nisl pretium.
+              I built this website as a teaching tool for me and to help my saxophone students learn improvisation
+              and theory. It features a theory page that resembles flashcards with questions
+              and answers and an instrument-specific ear training page to help
+              students identify intervals. The site was built using React, Bootstrap, CSS, Formik,
+              EmailJS, Logic Pro, and is deployed using Vercel.
             </p>
+            
 
             <Link
               to="https://kaseyknudsenjazztheory.vercel.app/"
