@@ -40,8 +40,8 @@ const Projects = () => {
               CSS, Formik, EmailJS, Logic Pro, and is deployed using Vercel.
             </p>
             <div className="theory-images-container">
-              <img src={JazzImprovImage2} alt="Theory 1" />
               <img src={JazzImprovImage3} alt="Theory 1" />
+              <img src={JazzImprovImage2} alt="Theory 1" />
               <img src={JazzImprovImage1} alt="Theory 1" />
             </div>
             <Link
