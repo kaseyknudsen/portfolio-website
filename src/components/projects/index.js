@@ -29,9 +29,8 @@ const Projects = () => {
               idx={15}
             />
           </h1>
-         
+
           <div>
-          
             <p>
               I built this website as a teaching tool for me and to help my
               saxophone students learn improvisation and theory. It features a
@@ -41,10 +40,10 @@ const Projects = () => {
               CSS, Formik, EmailJS, Logic Pro, and is deployed using Vercel.
             </p>
             <div className="theory-images-container">
-            <img src={JazzImprovImage2} alt="Theory 1" />
-            <img src={JazzImprovImage3} alt="Theory 1" />
-            <img src={JazzImprovImage1} alt="Theory 1" />
-          </div>
+              <img src={JazzImprovImage2} alt="Theory 1" />
+              <img src={JazzImprovImage3} alt="Theory 1" />
+              <img src={JazzImprovImage1} alt="Theory 1" />
+            </div>
             <Link
               to="https://kaseyknudsenjazztheory.vercel.app/"
               className="flat-button"

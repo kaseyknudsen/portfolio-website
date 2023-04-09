@@ -1,5 +1,9 @@
 $primary-color: #ffd700;
 
+body {
+  overflow-y: scroll;
+}
+
 @import 'animate.css';
 @import '.~loaders.css/src/animations/pacman.scss';
 
