@@ -1,0 +1,29 @@
+.flat-button {
+  color: #ffd700;
+  position: absolute;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-decoration: none;
+  padding: 8px 10px;
+  border: 1px solid #ffd700;
+  float: left;
+  border-radius: 4px;
+  background: 0 0;
+  text-transform: uppercase;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  opacity: 0;
+  animation: backInRight 2s 2s;
+  animation-fill-mode: forwards;
+
+  &:hover {
+    background: #ffd700;
+    color: #333;
+    opacity: 0.7;
+  }
+}
+
+p {
+  position: relative;
+}
