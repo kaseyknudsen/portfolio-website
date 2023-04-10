@@ -56,7 +56,7 @@ const About = () => {
           <p>
             I discovered coding late in life, but it's gifted me with a whole
             new passion that I feel grateful for every day! I am excited to
-            continue my journey as a web developer with the right company. Let's
+            continue my journey as a web developer. Let's
             connect!
 
           </p>

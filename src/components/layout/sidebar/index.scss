@@ -2,10 +2,23 @@
   background: #181818;
   width: 60px;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
+  bottom: 0;
   z-index: 3;
   min-height: 500px;
+
+  .home-button {
+    color: #ffd700;
+    text-decoration: none;
+    margin-top: 20px;
+    a {
+      margin-top: 10px;
+    }
+    &:hover {
+      font-size: larger;
+    }
+  }
 
   nav {
     display: block;
