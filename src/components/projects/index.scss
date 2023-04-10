@@ -28,6 +28,27 @@
   }
 }
 
+.jazz-improv-paragraphs p {
+  margin-bottom: 50px;
+
+  &::before {
+    content: '<p>';
+    color: #ffd700;
+    font-family: La Belle Aurore;
+    position: absolute;
+    margin-top: -20px;
+    opacity: 0.6;
+  }
+  &::after {
+    content: '</p>';
+    color: #ffd700;
+    font-family: La Belle Aurore;
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    opacity: 0.6;
+  }
+}
 
 .theory-images-container img {
   vertical-align: middle;
@@ -39,6 +60,27 @@
 .theory-images-container img:nth-child(3) {
   width: 30%;
   margin-right: 1%;
+}
+
+.danicas-paragraphs p {
+  margin-bottom: 50px;
+  &::before {
+    content: '<p>';
+    color: #ffd700;
+    font-family: La Belle Aurore;
+    position: absolute;
+    margin-top: -20px;
+    opacity: 0.6;
+  }
+  &::after {
+    content: '</p>';
+    color: #ffd700;
+    font-family: La Belle Aurore;
+    position: absolute;
+    margin-top: 20px;
+    left: 0;
+    opacity: 0.6;
+  }
 }
 
 .danicas-images-container img {

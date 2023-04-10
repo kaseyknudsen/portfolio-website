@@ -36,30 +36,29 @@ const About = () => {
               idx={15}
             />
           </h1>
-
-          <p>
-            Hello! I am a front-end web developer focused on Javascript and
-            React, and i'm continuously diving into other technologies and frameworks
-            that catch my interest. I love building pages that are fast, responsive,
-            easy to use, and create enjoyable interactions and experiences for every
-            user.
-          </p>
-          <p>
-            I've spent the past 20 years as a professional musician, and I'm
-            fascinated by the similar traits that programming and music share.
-            Constant learning is a key concept in both disciplines as the
-            variety of tools are endless and ever-changing. Practice,
-            repetition, and resilience are vital to both music and programming
-            in order to assimilate complex concepts, and "speak" 
-            them fluently and creatively.
-          </p>
-          <p>
-            I discovered coding late in life, but it's gifted me with a whole
-            new passion that I feel grateful for every day! I am excited to
-            continue my journey as a web developer. Let's
-            connect!
-
-          </p>
+          <div className="paragraphs">
+            <p>
+              Hello! I am a front-end web developer focused on Javascript and
+              React, and i'm continuously diving into other technologies and
+              frameworks that catch my interest. I love building pages that are
+              fast, responsive, easy to use, and create enjoyable interactions
+              and experiences for every user.
+            </p>
+            <p>
+              I've spent the past 20 years as a professional musician, and I'm
+              fascinated by the similar traits that programming and music share.
+              Constant learning is a key concept in both disciplines as the
+              variety of tools are endless and ever-changing. Practice,
+              repetition, and resilience are vital to both music and programming
+              in order to assimilate complex concepts, and "speak" them fluently
+              and creatively.
+            </p>
+            <p>
+              I discovered coding late in life, but it's gifted me with a whole
+              new passion that I feel grateful for every day! I am excited to
+              continue my journey as a web developer. Let's connect!
+            </p>
+          </div>
         </div>
         <div className="stage-cube-cont">
           <div className="cubespinner">
