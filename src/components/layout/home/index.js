@@ -28,11 +28,11 @@ const Home = () => {
     const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
-
+    console.log('running again!')
     return () => {
       clearTimeout(timerId)
     }
-  }, [])
+  })
 
   return (
     <>
@@ -70,9 +70,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        {/* <Logo /> */}
       </div>
-      {/* <Loader type="pacman"/> */}
     </>
   )
 }
