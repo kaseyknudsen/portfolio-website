@@ -39,7 +39,8 @@
 }
 
 .about-page,
-.contact-page, .projects-page{
+.contact-page,
+.projects-page {
   .text-zone {
     position: absolute;
     left: 10%;
@@ -84,6 +85,12 @@
       opacity: 0.6;
       line-height: 18px;
     }
+  }
+  h2 {
+    font-family: 'La Belle Aurore';
+    font-weight: 200;
+    color: #ffd700;
+    font-size: 30px;
   }
   p {
     font-style: 13px;

@@ -18,9 +18,26 @@ body {
   
 }
 @font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf') format('ttf');
+  
+}
+@font-face {
   font-family: 'Coolvetica';
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
   
+}
+@font-face {
+  font-family: 'Lato-Italic';
+  src: url('./assets/fonts/Lato-Italic.ttf') format('ttf'); 
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url('./assets/fonts/Lato-Regular.ttf') format('ttf'); 
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url('./assets/fonts/Lato-Light.ttf') format('ttf'); 
 }
 
 input,
