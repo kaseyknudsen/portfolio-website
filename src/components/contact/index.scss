@@ -56,20 +56,23 @@
     min-height: 150px;
   }
 
-  .flat-button {
-    color: #ffd700;
+  input[type='submit'] {
+    background-color: #ffd700;
     font-size: 11px;
     letter-spacing: 3px;
     text-decoration: none;
     padding: 8px 10px;
     border: 1px solid #ffd700;
-    float: left;
+    float: right;
     border-radius: 4px;
-    background: 0 0;
     text-transform: uppercase;
     float: left;
     text-align: center;
-    margin-right: 10px;
+    margin-right: 20px;
+    opacity: .8;
+    &:hover {
+     opacity: 1; 
+    }
   }
 }
 
