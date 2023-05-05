@@ -29,12 +29,12 @@ const Sidebar = () => {
       </nav>
       <ul>
         <li>
-          <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/kasey-knudsen-40908b171/'>
+          <a target="_blank" className='social-link' rel='noreferrer' href='https://www.linkedin.com/in/kasey-knudsen-40908b171/'>
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
           </a>
         </li>
         <li>
-          <a target="_blank" rel='noreferrer' href='https://github.com/kaseyknudsen/'>
+          <a target="_blank" className='social-link' rel='noreferrer'  href='https://github.com/kaseyknudsen/'>
             <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
           </a>
         </li>
