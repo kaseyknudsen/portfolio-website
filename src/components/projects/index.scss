@@ -2,7 +2,8 @@
   width: 65%;
 
   h2 {
-    animation: fadeIn 5s;
+    opacity: 1;
+    animation: fadeIn 2s 2s backwards;
   }
 }
 
