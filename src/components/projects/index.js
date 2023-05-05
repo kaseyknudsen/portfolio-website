@@ -34,33 +34,7 @@ const Projects = () => {
 
           <div>
             <div style={{ marginTop: '5em' }}>
-              <h2>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={[
-                    'J',
-                    'a',
-                    'z',
-                    'z',
-                    ' ',
-                    'I',
-                    'm',
-                    'p',
-                    'r',
-                    'o',
-                    'v',
-                    ' ',
-                    'W',
-                    'e',
-                    'b',
-                    's',
-                    'i',
-                    't',
-                    'e',
-                  ]}
-                  idx={15}
-                />
-              </h2>
+              <h2>Jazz Improv Website</h2>
             </div>
             <div className="jazz-improv-paragraphs">
               <p>
@@ -95,37 +69,9 @@ const Projects = () => {
           </div>
           <div style={{ marginTop: '100px' }}>
             <div style={{ marginTop: '5em' }}>
-              <h2>
-                <AnimatedLetters
-                  letterClass={letterClass}
-                  strArray={[
-                    'D',
-                    'a',
-                    'n',
-                    'i',
-                    'c',
-                    'a',
-                    "'",
-                    's',
-                    ' ',
-                    'C',
-                    'u',
-                    's',
-                    't',
-                    'o',
-                    'm',
-                    ' ',
-                    'B',
-                    'a',
-                    'k',
-                    'e',
-                    's',
-                  ]}
-                  idx={15}
-                />
-              </h2>
+              <h2 className="project-titles">Danica's Custom Bakes</h2>
             </div>
-            <div className="danicas-paragraphs">
+            <div>
               <p>
                 Danica's Custom Bakes was founded by Danica Cortez on July 2022
                 in Austin, TX. I started working as an intern on this project in

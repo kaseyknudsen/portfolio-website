@@ -28,7 +28,6 @@ const Home = () => {
     const timerId = setTimeout(() => {
       setLetterClass('text-animate-hover')
     }, 4000)
-    console.log('running again!')
     return () => {
       clearTimeout(timerId)
     }
