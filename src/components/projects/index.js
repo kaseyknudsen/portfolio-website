@@ -73,7 +73,7 @@ const Projects = () => {
             </div>
             <div>
               <p>
-                Danica's Custom Bakes was founded by Danica Cortez on July 2022
+                Danica's Custom Bakes was founded by Danica Cortez in July of 2022
                 in Austin, TX. I started working as an intern on this project in
                 January of 2023. It has given me a chance to get my feet wet
                 designing UI Components, writing tests and working with a team
