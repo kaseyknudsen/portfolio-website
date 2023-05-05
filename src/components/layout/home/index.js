@@ -34,6 +34,7 @@ const Home = () => {
     }
   })
 
+
   return (
     <>
       <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
@@ -63,6 +64,7 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
+       
       </div>
     </>
   )
