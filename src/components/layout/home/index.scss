@@ -1,7 +1,7 @@
 .home-page {
   .text-zone {
     position: absolute;
-    left: 15%;
+    left: 5em;
     top: 50%;
     transform: translateY(-50%);
     width: 45%;
@@ -93,26 +93,27 @@
       opacity: 0.5;
     }
   }
-}
-
-.kaseyImg {
-  opacity: 0.5;
-  filter: drop-shadow(0 0 1.2rem #ffd700);
-  width: 30%;
-  height: auto;
-  position: absolute;
-  border-radius: 50%;
-  border: 2px solid #ffd700;
-  margin-left: 65%;
-  margin-top: 20%;
-  animation-name: picAnimation;
-  animation-duration: 6s; 
-  @keyframes picAnimation {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 0.5;
+  .kaseyImg {
+    opacity: 0.5;
+    filter: drop-shadow(0 0 1.2rem #ffd700);
+    width: 30%;
+    height: auto;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #ffd700;
+    margin-left: 65%;
+    margin-top: 20%;
+    animation-name: picAnimation;
+    animation-duration: 6s; 
+    @keyframes picAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 0.5;
+      }
     }
   }
 }
+
+

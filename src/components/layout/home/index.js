@@ -8,16 +8,6 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = [' ', 'K', 'a', 's', 'e', 'y', '.']
   const jobArray = [
-    'F',
-    'r',
-    'o',
-    'n',
-    't',
-    '-',
-    'E',
-    'n',
-    'd',
-    ' ',
     'W',
     'e',
     'b',
@@ -66,8 +56,9 @@ const Home = () => {
 
   return (
     <>
-      <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
+      
       <div className="container home-page">
+      <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
         <div className="text-zone">
           <h1>
             <span className={letterClass}>H</span>

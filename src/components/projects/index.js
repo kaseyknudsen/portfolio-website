@@ -67,7 +67,7 @@ const Projects = () => {
               LIVE WEBSITE
             </Link>
           </div>
-          <div style={{ marginTop: '100px' }}>
+          <div style={{ marginTop: '100px'}}>
             <div style={{ marginTop: '5em' }}>
               <h2 className="project-titles">Danica's Custom Bakes</h2>
             </div>
