@@ -1,10 +1,10 @@
 .home-page {
   .text-zone {
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 50%;
     transform: translateY(-50%);
-    width: 30%;
+    width: 45%;
     max-height: 90%;
   }
   h1 {
@@ -37,25 +37,19 @@
     }
   }
 
-  .skills {
+  .skills-container {
+    border-top: 1px ridge #ffd700;
+    border-bottom: 1px ridge #ffd700;;
+    padding: 25px 0px 25px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 10%;
-    margin-left: -10px;
-    width: 130%;
-  }
-  ul {
-    position: relative;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 2em;
+    font-size: larger;
     color: #ffd700;
-    list-style: square;
-    display: inline-block;
-    margin-left: -20px;
-    letter-spacing: 2px;
-    li {
-      opacity: 1;
-      animation: fadeIn 2s 2s backwards;
-    }
-    .no-bullet {
-      list-style: none;
-    }
   }
 
   h2 {
@@ -95,10 +89,17 @@
   position: absolute;
   border-radius: 50%;
   border: 3px solid #ffd700;
-  margin-left: 55%;
+  margin-left: 60%;
   margin-top: 25%;
-  animation: fadeIn 2s 2s backwards;
+  animation-name: picAnimation;
+  animation-duration: 6s; 
+
+  @keyframes picAnimation {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
 }
-
-
-
