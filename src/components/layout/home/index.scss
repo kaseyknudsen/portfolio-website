@@ -46,10 +46,23 @@
     flex-wrap: wrap;
     margin-top: 10%;
     justify-content: flex-start;
-    gap: 12px;
+    gap: 15px;
     margin-bottom: 2em;
-    font-size: larger;
+    font-family: 'La Belle Aurore';
+    font-size: 1.2em;
+    letter-spacing: 2px;
     color: #ffd700;
+    animation-name: skillsAnimation;
+    animation: pulse 2s;
+    animation-duration: 8s;
+    @keyframes skillsAnimation {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   }
 
   h2 {
