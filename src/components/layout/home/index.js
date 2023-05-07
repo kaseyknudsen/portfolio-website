@@ -8,6 +8,16 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const nameArray = [' ', 'K', 'a', 's', 'e', 'y', '.']
   const jobArray = [
+    'F',
+    'r',
+    'o',
+    'n',
+    't',
+    '-',
+    'E',
+    'n',
+    'd',
+    ' ',
     'W',
     'e',
     'b',
@@ -23,6 +33,27 @@ const Home = () => {
     'r',
     '.',
   ]
+  const skillsArray = [
+    'Javascript',
+    'React',
+    'Next JS',
+    'Typescript',
+    'NodeJS',
+    'HTML5',
+    'CSS',
+    'Bootstrap',
+    'Reactstrap',
+    'Material UI',
+    'Tailwind CSS',
+    'Mongo DB',
+    'Express JS',
+    'Mongoose',
+    'Git',
+    'Github',
+    'Vercel',
+    'Cypress',
+    'Postman',
+  ]
 
   useEffect(() => {
     const timerId = setTimeout(() => {
@@ -33,38 +64,47 @@ const Home = () => {
     }
   })
 
-
   return (
     <>
       <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
-      <div className="container home-page">
-        <div className="text-zone">
-          <h1>
-            <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span>
+        <div className="container home-page">
+          <div className="text-zone">
+            <h1>
+              <span className={letterClass}>H</span>
+              <span className={`${letterClass} _12`}>i,</span>
+              <br />
+              <span className={`${letterClass} _13`}>I</span>
+              <span className={`${letterClass} _14`}>'m</span>
 
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={22}
-            />
-          </h1>
-          <h2>Frontend Developer / Javascript / React</h2>
-          <Link to="/contact" className="flat-button">
-            CONTACT ME
-          </Link>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={22}
+              />
+            </h1>
+
+            <div className="skills">
+              {skillsArray.map((skill, index) => {
+                return (
+                  <ul>
+                    <li key={index} className={index === 0 && 'no-bullet'}>
+                      {skill}
+                    </li>
+                  </ul>
+                )
+              })}
+            </div>
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
         </div>
-       
-      </div>
     </>
   )
 }
