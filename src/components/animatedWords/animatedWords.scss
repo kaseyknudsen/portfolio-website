@@ -1,0 +1,5 @@
+@for $i from 1 through 35 {
+    .word-animate._#{$i} {
+      animation-delay: #{$i / 12}s;
+    }
+  }

@@ -39,7 +39,7 @@
 
   .skills-container {
     border-top: 1px ridge #ffd700;
-    border-bottom: 1px ridge #ffd700;;
+    border-bottom: 1px ridge #ffd700;
     padding: 25px 0px 25px 0px;
     display: flex;
     flex-direction: row;
@@ -101,10 +101,10 @@
     position: absolute;
     border-radius: 50%;
     border: 2px solid #ffd700;
-    margin-left: 65%;
+    margin-left: 60%;
     margin-top: 20%;
     animation-name: picAnimation;
-    animation-duration: 6s; 
+    animation-duration: 6s;
     @keyframes picAnimation {
       0% {
         opacity: 0;
@@ -115,5 +115,3 @@
     }
   }
 }
-
-

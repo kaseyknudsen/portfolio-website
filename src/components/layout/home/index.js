@@ -6,6 +6,7 @@ import KaseyImg from '../../../assets/images/KaseyK.png'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [wordClass, setWordClass] = useState('word-animate')
   const nameArray = [' ', 'K', 'a', 's', 'e', 'y', '.']
   const jobArray = [
     'W',
@@ -24,24 +25,25 @@ const Home = () => {
     '.',
   ]
   const skillsArray = [
-    'Javascript',
-    'React',
-    'Next JS',
-    'Typescript',
-    'NodeJS',
-    'HTML5',
-    'CSS',
-    'Bootstrap',
-    'Reactstrap',
-    'Material UI',
-    'Tailwind CSS',
-    'Mongo DB',
-    'Express JS',
-    'Mongoose',
-    'Git',
-    'Github',
-    'Vercel',
-    'Cypress',
+    'Javascript,',
+    'React,',
+    'Next JS,',
+    'Typescript,',
+    'NodeJS,',
+    'HTML5,',
+    'CSS,',
+    'SASS,',
+    'Bootstrap,',
+    'Reactstrap,',
+    'Material UI,',
+    'Tailwind CSS,',
+    'Mongo DB,',
+    'Express JS,',
+    'Mongoose,',
+    'Git,',
+    'Github,',
+    'Vercel,',
+    'Cypress,',
     'Postman',
   ]
 
@@ -56,10 +58,10 @@ const Home = () => {
 
   return (
     <>
-      
       <div className="container home-page">
       <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
         <div className="text-zone">
+        
           <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
@@ -82,11 +84,7 @@ const Home = () => {
 
           <div className="skills-container">
             {skillsArray.map((skill, index) => {
-              return (
-                <span key={index} className={index === 0 && 'no-bullet'}>
-                  {skill}
-                </span>
-              )
+              return <span>{skill}</span>
             })}
           </div>
           <Link to="/contact" className="flat-button">
