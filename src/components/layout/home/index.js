@@ -59,10 +59,13 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-      <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
+        <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
         <div className="text-zone">
-        
-          <h1>
+          <div className='home-page-h1' style={{paddingTop: '15%'}}>
+            <h1>Hi, I'm Kasey.</h1>
+            <h1>I'm a Web Developer.</h1>
+          </div>
+          {/* <h1>
             <span className={letterClass}>H</span>
             <span className={`${letterClass} _12`}>i,</span>
             <br />
@@ -80,14 +83,14 @@ const Home = () => {
               strArray={jobArray}
               idx={22}
             />
-          </h1>
+          </h1> */}
 
           <div className="skills-container">
             {skillsArray.map((skill, index) => {
               return <span>{skill}</span>
             })}
           </div>
-          <Link to="/contact" className="flat-button">
+          <Link to="/contact" className="flat-button" id="contact-me-button">
             CONTACT ME
           </Link>
         </div>

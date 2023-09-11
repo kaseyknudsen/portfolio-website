@@ -14,27 +14,27 @@
     font-family: 'Coolvetica';
     font-weight: 400;
 
-    &::before {
-      content: '<h1>';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      position: absolute;
-      margin-top: -40px;
-      left: 15px;
-      opacity: 0.6;
-    }
+    // &::before {
+    //   content: '<h1>';
+    //   font-family: 'La Belle Aurore';
+    //   color: #ffd700;
+    //   font-size: 18px;
+    //   position: absolute;
+    //   margin-top: -40px;
+    //   left: 15px;
+    //   opacity: 0.6;
+    // }
 
-    &::after {
-      content: '<h1 />';
-      font-family: 'La Belle Aurore';
-      color: #ffd700;
-      font-size: 18px;
-      margin-top: 18px;
-      margin-left: 20px;
-      opacity: 0.6;
-      animation: fadeIn 1s 1.7s backwards;
-    }
+    // &::after {
+    //   content: '<h1 />';
+    //   font-family: 'La Belle Aurore';
+    //   color: #ffd700;
+    //   font-size: 18px;
+    //   margin-top: 18px;
+    //   margin-left: 20px;
+    //   opacity: 0.6;
+    //   animation: fadeIn 1s 1.7s backwards;
+    // }
   }
 
   .skills-container {
@@ -114,4 +114,39 @@
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    .text-zone {
+      position: static;
+      width: 50%;
+      transform: none;
+      
+      margin-left: 5em;
+      margin-bottom: 20px; // you can adjust this value for spacing between the text and image
+    }
+    h1 {
+      font-size: 25px;
+    }
+
+    .kaseyImg {
+      position: static;
+      margin-left: 5em;
+      margin-top: 0;
+      width: 50%; // adjust this if you don't want the image to take full width on mobile
+      display: block;
+    }
+    .skills-container {
+      font-size: small;
+      padding-bottom: 10px;
+    }
+   
+   
+  }
+ 
+}
+#contact-me-button {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
