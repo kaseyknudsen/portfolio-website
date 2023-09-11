@@ -25,6 +25,18 @@ const About = () => {
       clearTimeout(timerId)
     }
   }, [])
+
+  const downloadResume = () => {
+    fetch('KaseyKnudsenResume.pdf').then((response) => {
+      response.myResume().then((myResume) => {
+        const fileURL = window.URL.createObjectURL(myResume)
+        let aLink = document.createElement('a')
+        aLink.href = fileURL
+        aLink.download = 'KaseyKnudsenResume.pdf'
+        aLink.click()
+      })
+    })
+  }
   return (
     <>
       <div className="container about-page">
@@ -59,7 +71,13 @@ const About = () => {
               continue my journey as a web developer. Let's connect!
             </p>
           </div>
+          <div>
+            <button className="flat-button" onClick={downloadResume}>
+              Download My Resume
+            </button>
+          </div>
         </div>
+
         <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">

@@ -1,5 +1,10 @@
 .projects-page .text-zone {
   width: 65%;
+
+  h2 {
+    opacity: 1;
+    animation: fadeIn 2s 2s backwards;
+  }
 }
 
 .flat-button {
@@ -57,9 +62,19 @@
   border: 2px solid #ffd700;
 }
 
+.theory-images-container img:nth-child(1) {
+  opacity: 1;
+  animation: fadeIn 2s 3s backwards;
+}
+.theory-images-container img:nth-child(2) {
+  opacity: 1;
+  animation: fadeIn 2s 3.5s backwards;
+}
 .theory-images-container img:nth-child(3) {
   width: 30%;
   margin-right: 1%;
+  opacity: 1;
+  animation: fadeIn 2s 4s backwards;
 }
 
 .danicas-paragraphs p {
@@ -89,3 +104,12 @@
   border: 2px solid #ffd700;
   margin-bottom: 3em;
 }
+.danicas-images-container img:nth-child(1) {
+  opacity: 1;
+  animation: fadeIn 2s 3s backwards;
+}
+.danicas-images-container img:nth-child(2) {
+  opacity: 1;
+  animation: fadeIn 2s 3.5s backwards;
+}
+
