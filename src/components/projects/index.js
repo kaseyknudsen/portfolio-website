@@ -8,6 +8,8 @@ import JazzImprovImage2 from '../../assets/images/jazz-improv-website-image-2.pn
 import JazzImprovImage3 from '../../assets/images/jazz-improv-website-image-3.png'
 import Danicas1 from '../../assets//images/Danicas1.png'
 import Danicas2 from '../../assets/images/Danicas2.png'
+import Schim1 from '../../assets/images/Schim1.png'
+import Schim2 from '../../assets/images/Schim2.png'
 
 const Projects = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -36,7 +38,7 @@ const Projects = () => {
             <div style={{ marginTop: '5em' }}>
               <h2>Jazz Improv Website</h2>
             </div>
-            <div className="jazz-improv-paragraphs">
+            <div className="project-paragraphs">
               <p>
                 I built this website as a teaching tool for me, and to help my
                 saxophone students to learn improvise. It features a theory page
@@ -56,8 +58,8 @@ const Projects = () => {
             </div>
             <div className="theory-images-container">
               <img src={JazzImprovImage3} alt="Theory 1" />
-              <img src={JazzImprovImage2} alt="Theory 1" />
-              <img src={JazzImprovImage1} alt="Theory 1" />
+              <img src={JazzImprovImage2} alt="Theory 2" />
+              <img src={JazzImprovImage1} alt="Theory 3" />
             </div>
             <Link
               to="https://kaseyknudsenjazztheory.vercel.app/"
@@ -67,18 +69,54 @@ const Projects = () => {
               LIVE WEBSITE
             </Link>
           </div>
-          <div style={{ marginTop: '100px'}}>
+          <div>
+            <div style={{ marginTop: '10em' }}>
+              <h2>Schimscheimer Family Trio Website</h2>
+            </div>
+            <div className="project-paragraphs">
+              <p>
+                This is the official website for "The Schimscheimer Family
+                Trio," a band I am a part of. I embarked on this project to
+                deepen my understanding of NextJS 13 and Tailwind CSS.
+                Additionally, to serve our band's mailing list needs, I
+                implemented the SheetDB API, allowing us to use a Google
+                spreadsheet as a lightweight backend.
+              </p>
+              <p>
+                The Tech Stack is NextJS 13, chosen for its ease of routing and
+                server side rendering capabilities, Javascript, The core
+                programming language used for the project, and Tailwind CSS,
+                chosen for its ease of use as well as its custom UI
+                capabilities. I wanted the site to appear as unique as possible.
+              </p>
+            </div>
+            <div
+              className="theory-images-container"
+              style={{ marginBottom: '3em' }}
+            >
+              <img src={Schim1} alt="Home Page" />
+              <img src={Schim2} alt="Listen Page" />
+            </div>
+            <Link
+              to="https://schimscheimerfamilytriomusic.com"
+              className="flat-button"
+              target="_blank"
+            >
+              LIVE WEBSITE
+            </Link>
+          </div>
+          <div style={{ marginTop: '10em' }}>
             <div style={{ marginTop: '5em' }}>
               <h2 className="project-titles">Danica's Custom Bakes</h2>
             </div>
-            <div>
+            <div className="project-paragraphs">
               <p>
-                Danica's Custom Bakes was founded by Danica Cortez in July of 2022
-                in Austin, TX. I started working as an intern on this project in
-                January of 2023. It has given me a chance to get my feet wet
-                designing UI Components, writing tests and working with a team
-                of developers. The tech stack is Next JS, Material UI, Cypress,
-                Typescript, Mongo DB, Prisma, Docker, and Postman.
+                Danica's Custom Bakes was founded by Danica Cortez in July of
+                2022 in Austin, TX. I started working as an intern on this
+                project in January of 2023. It has given me a chance to get my
+                feet wet designing UI Components, writing tests and working with
+                a team of developers. The tech stack is Next JS, Material UI,
+                Cypress, Typescript, Mongo DB, Prisma, Docker, and Postman.
               </p>
             </div>
             <div className="danicas-images-container">
