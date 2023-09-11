@@ -27,8 +27,8 @@ const About = () => {
   }, [])
 
   const downloadResume = () => {
-    fetch('KaseyKnudsenResume.pdf').then((response) => {
-      response.myResume().then((myResume) => {
+    fetch('./KaseyKnudsenResume.pdf').then((response) => {
+      response.blob().then((myResume) => {
         const fileURL = window.URL.createObjectURL(myResume)
         let aLink = document.createElement('a')
         aLink.href = fileURL
