@@ -69,9 +69,9 @@
     float: left;
     text-align: center;
     margin-right: 20px;
-    opacity: .8;
+    opacity: 0.8;
     &:hover {
-     opacity: 1; 
+      opacity: 1;
     }
   }
 }
@@ -118,13 +118,28 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 576px) {
+  #contact-form-id {
+    padding-top: 20px;
+  }
   .map-wrap {
     margin: 0;
     width: 50%;
+    display: none;
   }
 
   .info-map {
     display: none;
+  }
+  h1 {
+    font-size: 15px;
+  }
+
+  #contact-me-text {
+    width: 65%;
+    font-size: small;
+  }
+  #contact-me-title {
+    font-size: 35px;
   }
 }

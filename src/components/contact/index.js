@@ -45,8 +45,8 @@ const Contact = () => {
   return (
     <>
       <div className="container contact-page">
-        <div className="text-zone">
-          <h1>
+        <div className="text-zone" id="contact-me-text">
+          <h1 id='contact-me-title'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
@@ -57,7 +57,7 @@ const Contact = () => {
             I'm an ambitious junior developer looking for projects to work on! Please contact
             me for more information.
           </p>
-          <div className="contact-form">
+          <div className="contact-form" id='contact-form-id'>
             <form ref={refForm} onSubmit={sendEmail}>
             <ul>
                 <li className="half">
