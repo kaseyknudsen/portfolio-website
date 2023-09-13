@@ -36,23 +36,23 @@
 .project-paragraphs p {
   margin-bottom: 50px;
 
-  &::before {
-    content: '<p>';
-    color: #ffd700;
-    font-family: La Belle Aurore;
-    position: absolute;
-    margin-top: -20px;
-    opacity: 0.6;
-  }
-  &::after {
-    content: '</p>';
-    color: #ffd700;
-    font-family: La Belle Aurore;
-    position: absolute;
-    margin-top: 20px;
-    left: 0;
-    opacity: 0.6;
-  }
+  // &::before {
+  //   content: '<p>';
+  //   color: #ffd700;
+  //   font-family: La Belle Aurore;
+  //   position: absolute;
+  //   margin-top: -20px;
+  //   opacity: 0.6;
+  // }
+  // &::after {
+  //   content: '</p>';
+  //   color: #ffd700;
+  //   font-family: La Belle Aurore;
+  //   position: absolute;
+  //   margin-top: 20px;
+  //   left: 0;
+  //   opacity: 0.6;
+  // }
 }
 
 .theory-images-container img {
@@ -79,23 +79,23 @@
 
 .danicas-paragraphs p {
   margin-bottom: 50px;
-  &::before {
-    content: '<p>';
-    color: #ffd700;
-    font-family: La Belle Aurore;
-    position: absolute;
-    margin-top: -20px;
-    opacity: 0.6;
-  }
-  &::after {
-    content: '</p>';
-    color: #ffd700;
-    font-family: La Belle Aurore;
-    position: absolute;
-    margin-top: 20px;
-    left: 0;
-    opacity: 0.6;
-  }
+  // &::before {
+  //   content: '<p>';
+  //   color: #ffd700;
+  //   font-family: La Belle Aurore;
+  //   position: absolute;
+  //   margin-top: -20px;
+  //   opacity: 0.6;
+  // }
+  // &::after {
+  //   content: '</p>';
+  //   color: #ffd700;
+  //   font-family: La Belle Aurore;
+  //   position: absolute;
+  //   margin-top: 20px;
+  //   left: 0;
+  //   opacity: 0.6;
+  // }
 }
 
 .danicas-images-container img {
@@ -113,3 +113,27 @@
   animation: fadeIn 2s 3.5s backwards;
 }
 
+@media (max-width: 576px) {
+  .theory-images-container {
+    display: none;
+  }
+  #projects-heading {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  p {
+    font-size: 14px;
+  }
+  .danicas-images-container {
+    display: none;
+  }
+  .flat-button {
+    margin-left: 0;
+    margin-top: 2%;
+  }
+  #theory-website-button {
+    margin-top: 12%;
+  }
+}

@@ -26,7 +26,7 @@ const Projects = () => {
     <>
       <div className="container projects-page">
         <div className="text-zone">
-          <h1>
+          <h1 id='projects-heading'>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
@@ -35,10 +35,10 @@ const Projects = () => {
           </h1>
 
           <div>
-            <div style={{ marginTop: '5em' }}>
-              <h2>Jazz Improv Website</h2>
+            <div style={{ marginTop: '3em' }}>
+              <h2 className='project-title'>Jazz Improv Website</h2>
             </div>
-            <div className="project-paragraphs">
+            <div id="project-paragraphs">
               <p>
                 I built this website as a teaching tool for me, and to help my
                 saxophone students to learn improvise. It features a theory page
@@ -65,13 +65,14 @@ const Projects = () => {
               to="https://kaseyknudsenjazztheory.vercel.app/"
               className="flat-button"
               target="_blank"
+              id='theory-website-button'
             >
               LIVE WEBSITE
             </Link>
           </div>
           <div>
             <div style={{ marginTop: '10em' }}>
-              <h2>Schimscheimer Family Trio Website</h2>
+              <h2 className='project-title'>Schimscheimer Family Trio Website</h2>
             </div>
             <div className="project-paragraphs">
               <p>
@@ -107,7 +108,7 @@ const Projects = () => {
           </div>
           <div style={{ marginTop: '10em' }}>
             <div style={{ marginTop: '5em' }}>
-              <h2 className="project-titles">Danica's Custom Bakes</h2>
+              <h2 className="project-title">Danica's Custom Bakes</h2>
             </div>
             <div className="project-paragraphs">
               <p>

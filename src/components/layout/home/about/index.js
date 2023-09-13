@@ -73,7 +73,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <button className="flat-button" onClick={downloadResume}>
+            <button className="flat-button" id="resume-btn" onClick={downloadResume}>
               Download My Resume
             </button>
           </div>
