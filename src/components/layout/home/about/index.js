@@ -41,14 +41,15 @@ const About = () => {
     <>
       <div className="container about-page">
         <div className="text-zone">
-          <h1>
-            <AnimatedLetters
+          <h1 className='about-me-title'>
+            About Me
+            {/* <AnimatedLetters
               letterClass={letterClass}
               strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
               idx={15}
-            />
+            /> */}
           </h1>
-          <div className="paragraphs">
+          <div className="paragraphs" id="about-me-paragraphs">
             <p>
               Hello! I am a front-end web developer focused on Javascript and
               React, and i'm continuously diving into other technologies and
@@ -78,7 +79,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="stage-cube-cont">
+        {/* <div className="stage-cube-cont">
           <div className="cubespinner">
             <div className="face1">
               <FontAwesomeIcon icon={faHtml5} color="#F06529" />
@@ -102,7 +103,7 @@ const About = () => {
               <FontAwesomeIcon icon={faNodeJs} color="#3c873a" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <Loader type="pacman" />
     </>

@@ -117,7 +117,7 @@
 }
 
 @media (max-width: 768px) {
-  .home-page {
+  .home-page, .about-page {
     .text-zone {
       position: static;
       width: 50%;
@@ -127,7 +127,7 @@
       margin-bottom: 20px; // you can adjust this value for spacing between the text and image
     }
     h1 {
-      font-size: 25px;
+      font-size: 30px;
     }
 
     .kaseyImg {
