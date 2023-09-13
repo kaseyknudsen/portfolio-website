@@ -26,7 +26,7 @@ const Projects = () => {
     <>
       <div className="container projects-page">
         <div className="text-zone">
-          <h1 id='projects-heading'>
+          <h1 id="projects-heading">
             <AnimatedLetters
               letterClass={letterClass}
               strArray={['P', 'r', 'o', 'j', 'e', 'c', 't', 's']}
@@ -36,9 +36,9 @@ const Projects = () => {
 
           <div>
             <div style={{ marginTop: '3em' }}>
-              <h2 className='project-title'>Jazz Improv Website</h2>
+              <h2 className="project-title">Jazz Improv Website</h2>
             </div>
-            <div id="project-paragraphs">
+            <div id="jazz-improv-paragraphs">
               <p>
                 I built this website as a teaching tool for me, and to help my
                 saxophone students to learn improvise. It features a theory page
@@ -65,16 +65,18 @@ const Projects = () => {
               to="https://kaseyknudsenjazztheory.vercel.app/"
               className="flat-button"
               target="_blank"
-              id='theory-website-button'
+              id="theory-website-button"
             >
               LIVE WEBSITE
             </Link>
           </div>
           <div>
             <div style={{ marginTop: '10em' }}>
-              <h2 className='project-title'>Schimscheimer Family Trio Website</h2>
+              <h2 className="project-title">
+                Schimscheimer Family Trio Website
+              </h2>
             </div>
-            <div className="project-paragraphs">
+            <div className="schim-paragraphs">
               <p>
                 This is the official website for "The Schimscheimer Family
                 Trio," a band I am a part of. I embarked on this project to
@@ -83,7 +85,7 @@ const Projects = () => {
                 implemented the SheetDB API, allowing us to use a Google
                 spreadsheet as a lightweight backend.
               </p>
-              <p>
+              <p style={{ marginTop: '2px' }}>
                 The Tech Stack is NextJS 13, chosen for its ease of routing and
                 server side rendering capabilities, Javascript, The core
                 programming language used for the project, and Tailwind CSS,

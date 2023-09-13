@@ -249,13 +249,27 @@
     .skills-container {
       font-size: small;
       padding-bottom: 10px;
+      width: 125%;
+    }
+    .flat-button {
+      color: #ffd700;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 4px;
+      font-family: sans-serif;
+      text-decoration: none;
+      padding: 10px 18px;
+      border: 1px solid #ffd700;
+      margin-top: 10px;
+      float: left;
+      white-space: nowrap;
+  
+      &:hover {
+        background: #ffd700;
+        color: #333;
+        opacity: 0.5;
+      }
     }
   }
-  #contact-me-button {
-    margin-left: 0;
-  }
-}
-#contact-me-button {
-  margin-top: 20px;
-  margin-bottom: 20px;
+ 
 }

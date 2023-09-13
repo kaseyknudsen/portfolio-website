@@ -6,24 +6,24 @@ import KaseyImg from '../../../assets/images/KaseyK.png'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const [wordClass, setWordClass] = useState('word-animate')
-  const nameArray = [' ', 'K', 'a', 's', 'e', 'y', '.']
-  const jobArray = [
-    'W',
-    'e',
-    'b',
-    ' ',
-    'd',
-    'e',
-    'v',
-    'e',
-    'l',
-    'o',
-    'p',
-    'e',
-    'r',
-    '.',
-  ]
+  // const [wordClass, setWordClass] = useState('word-animate')
+  // const nameArray = [' ', 'K', 'a', 's', 'e', 'y', '.']
+  // const jobArray = [
+  //   'W',
+  //   'e',
+  //   'b',
+  //   ' ',
+  //   'd',
+  //   'e',
+  //   'v',
+  //   'e',
+  //   'l',
+  //   'o',
+  //   'p',
+  //   'e',
+  //   'r',
+  //   '.',
+  // ]
   const skillsArray = [
     'Javascript,',
     'React,',
@@ -61,7 +61,7 @@ const Home = () => {
       <div className="container home-page">
         <img src={KaseyImg} className="kaseyImg" alt="Kasey Knudsen" />
         <div className="text-zone">
-          <div className='home-page-h1' style={{paddingTop: '15%'}}>
+          <div className="home-page-h1" style={{ paddingTop: '15%' }}>
             <h1>Hi, I'm Kasey.</h1>
             <h1>I'm a Web Developer.</h1>
           </div>
@@ -90,9 +90,11 @@ const Home = () => {
               return <span>{skill}</span>
             })}
           </div>
-          <Link to="/contact" className="flat-button" id="contact-me-button">
-            CONTACT ME
-          </Link>
+          <div id="contact-me-button">
+            <Link to="/contact" className="flat-button">
+              CONTACT ME
+            </Link>
+          </div>
         </div>
       </div>
     </>
